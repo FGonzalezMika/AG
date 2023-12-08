@@ -1,0 +1,109 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.inicio {
+  background-image: url("../imagenes/plano1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20% 0 15% 0;
+  border-bottom: 1.9rem solid #2E2E2E;
+}
+.inicio h1 {
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(0.2rem);
+  color: #331312;
+  font-size: 3rem;
+}
+
+.obra-slider {
+  display: flex;
+  justify-content: center;
+  background-image: url("../imagenes/fondomadera.png");
+  background-size: cover;
+  background-position: center;
+}
+.obra-slider .slide {
+  width: 40rem;
+  margin: 3rem;
+}
+.obra-slider img {
+  border-radius: 5rem #2E2E2E;
+}
+
+.contacto {
+  padding: 4rem;
+  background: #2E2E2E;
+}
+.contacto h3 {
+  color: #331312;
+  border-bottom: 0.5rem solid;
+}
+.contacto a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  max-width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 2rem;
+}
+.contacto a:hover {
+  background: #331312;
+  border-radius: 3rem;
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+}
+
+.icono-wpp {
+  position: fixed;
+  z-index: 1;
+  right: 0.5rem;
+  bottom: 3.5rem;
+}
+.icono-wpp:hover {
+  background: #2E2E2E;
+  border-radius: 1.5rem;
+}
+
+.menu-fijo {
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+}
+
+.item {
+  scroll-margin-top: 3.5rem; /* ESTO LO PONGO PARA CUANDO HAGO CLICK EN LA PAGINA,
+QUE AL BAJAR LA BARRA NO ME TAPE EL CONTENIDO DE ESA PAGINA */
+}
+
+.color-fondo {
+  background: #331312;
+  border-bottom: 0.5rem solid;
+}
+
+.nav-link {
+  margin-right: 1.2rem;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #331312;
+  padding: 2rem;
+}
+footer img {
+  width: 8rem;
+}
+footer small {
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=style.css.map */

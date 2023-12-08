@@ -1,0 +1,13 @@
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: $color-fondo-menu;
+    padding: 2rem;
+    img{
+        width: 8rem;
+    }
+    small{
+        color: $color-letras-menu;
+    }
+}
