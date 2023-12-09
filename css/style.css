@@ -13,8 +13,8 @@ body {
 .inicio h1 {
   display: flex;
   justify-content: center;
-  backdrop-filter: blur(0.2rem);
-  color: #331312;
+  backdrop-filter: blur(1rem);
+  color: #000000;
   font-size: 3rem;
 }
 
@@ -38,7 +38,7 @@ body {
   background: #2E2E2E;
 }
 .contacto h3 {
-  color: #331312;
+  color: #FAE997;
   border-bottom: 0.5rem solid;
 }
 .contacto a {
@@ -53,10 +53,33 @@ body {
   margin-top: 2rem;
 }
 .contacto a:hover {
-  background: #331312;
+  background: #FAE997;
   border-radius: 3rem;
   transform: scale(1.2);
   transition-duration: 0.5s;
+}
+
+.servicios {
+  background-image: url("../imagenes/medanos.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.servicios .items-servicios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.servicios .items-servicios b {
+  font-size: 120%;
+  font-family: monospace;
+  color: #000000;
+  border-bottom: 0.1rem solid;
+}
+.servicios .items-servicios img {
+  width: 30%;
+  margin: 1rem;
+  border-radius: 1rem;
 }
 
 .icono-wpp {
@@ -82,28 +105,28 @@ QUE AL BAJAR LA BARRA NO ME TAPE EL CONTENIDO DE ESA PAGINA */
 }
 
 .color-fondo {
-  background: #331312;
-  border-bottom: 0.5rem solid;
+  background: #FAE997;
+  border-bottom: 0.5rem solid #2E2E2E;
 }
 
 .nav-link {
   margin-right: 1.2rem;
   font-size: 1.5rem;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: #331312;
+  background: #FAE997;
   padding: 2rem;
 }
 footer img {
   width: 8rem;
 }
 footer small {
-  color: #FFFFFF;
+  color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */

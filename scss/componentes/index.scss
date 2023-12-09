@@ -12,8 +12,8 @@ body{
     h1{
         display: flex;
         justify-content: center;
-        backdrop-filter: blur(0.2rem);
-        color: $color-fondo-menu;
+        backdrop-filter: blur(1rem);
+        color: $color-letras-menu;
         font-size: 3rem;
     }
 }
@@ -59,6 +59,29 @@ body{
     }
 }
 
+.servicios{
+    background-image: url('../imagenes/medanos.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    .items-servicios{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        b{
+            font-size: 120%;
+            font-family: monospace;
+            color: $color-letras-menu;
+            border-bottom: 0.1rem solid;
+        }
+        img{
+            width: 30%;
+            margin: 1rem;
+            border-radius: 1rem;
+        }
+    }
+}
+
 .icono-wpp{
     position: fixed;
     z-index: 1;
@@ -79,5 +102,7 @@ body{
     scroll-margin-top: 3.5rem; /* ESTO LO PONGO PARA CUANDO HAGO CLICK EN LA PAGINA,
      QUE AL BAJAR LA BARRA NO ME TAPE EL CONTENIDO DE ESA PAGINA */
 }
+
+
 
 
