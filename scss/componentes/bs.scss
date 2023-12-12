@@ -1,9 +1,19 @@
 .color-fondo{
-    background: #FAE997;
+    background-image: url('../imagenes/fondomadera.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     border-bottom: 0.5rem solid $grisoscuro-fondowpp;
 }
 .nav-link{
     margin-right: 1.2rem;
     font-size: 1.5rem;
+    font-weight: bold;
     color: $color-letras-menu;
+    transition: 0.7s;
+    border-radius: 2rem;
+    &:hover{
+        background: #3b00009f;
+        color: #fff;
+    }
 }

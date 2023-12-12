@@ -8,14 +8,18 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 20% 0 15% 0;
-  border-bottom: 1.9rem solid #2E2E2E;
+  border-bottom: 2.3rem solid #2E2E2E;
 }
 .inicio h1 {
   display: flex;
   justify-content: center;
   backdrop-filter: blur(1rem);
   color: #000000;
-  font-size: 3rem;
+  font-size: 350%;
+  font-family: serif;
+  margin: 3rem;
+  border-radius: 1rem;
+  text-align: center;
 }
 
 .obra-slider {
@@ -31,6 +35,9 @@ body {
 }
 .obra-slider img {
   border-radius: 5rem #2E2E2E;
+}
+.obra-slider .carousel-inner {
+  border-radius: 5rem;
 }
 
 .contacto {
@@ -51,10 +58,10 @@ body {
   align-items: center;
   margin: auto;
   margin-top: 2rem;
+  border-radius: 3rem;
 }
 .contacto a:hover {
   background: #FAE997;
-  border-radius: 3rem;
   transform: scale(1.2);
   transition-duration: 0.5s;
 }
@@ -71,10 +78,11 @@ body {
   justify-content: center;
 }
 .servicios .items-servicios b {
-  font-size: 120%;
-  font-family: monospace;
+  background: rgba(250, 233, 151, 0.4039215686);
+  font-size: 130%;
   color: #000000;
-  border-bottom: 0.1rem solid;
+  border: 0.3rem double;
+  border-radius: 1rem;
 }
 .servicios .items-servicios img {
   width: 30%;
@@ -105,28 +113,49 @@ QUE AL BAJAR LA BARRA NO ME TAPE EL CONTENIDO DE ESA PAGINA */
 }
 
 .color-fondo {
-  background: #FAE997;
+  background-image: url("../imagenes/fondomadera.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   border-bottom: 0.5rem solid #2E2E2E;
 }
 
 .nav-link {
   margin-right: 1.2rem;
   font-size: 1.5rem;
+  font-weight: bold;
   color: #000000;
+  transition: 0.7s;
+  border-radius: 2rem;
+}
+.nav-link:hover {
+  background: rgba(59, 0, 0, 0.6235294118);
+  color: #fff;
 }
 
+@media (max-width: 450px) {
+  .inicio h1 {
+    font-size: 250%;
+  }
+  .servicios .items-servicios b {
+    font-size: 80%;
+  }
+}
 footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: #FAE997;
+  background-image: url("../imagenes/fondomadera.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 2rem;
 }
 footer img {
   width: 8rem;
 }
 footer small {
-  color: #000000;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

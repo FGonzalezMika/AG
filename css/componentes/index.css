@@ -1,6 +1,6 @@
 /* Error: Undefined variable.
  *    ,
- * 11 |     border-bottom: 1.9rem solid $grisoscuro-fondowpp;
+ * 11 |     border-bottom: 2.3rem solid $grisoscuro-fondowpp;
  *    |                                 ^^^^^^^^^^^^^^^^^^^^
  *    '
  *   scss\componentes\index.scss 11:33  root stylesheet */
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 11 \2502      border-bottom: 1.9rem solid $grisoscuro-fondowpp;\d\a    \2502                                  ^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\componentes\\index.scss 11:33  root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 11 \2502      border-bottom: 2.3rem solid $grisoscuro-fondowpp;\d\a    \2502                                  ^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\componentes\\index.scss 11:33  root stylesheet";
 }

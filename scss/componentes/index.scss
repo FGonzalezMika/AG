@@ -8,13 +8,17 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20% 0 15% 0;
-    border-bottom: 1.9rem solid $grisoscuro-fondowpp;
+    border-bottom: 2.3rem solid $grisoscuro-fondowpp;
     h1{
         display: flex;
         justify-content: center;
         backdrop-filter: blur(1rem);
         color: $color-letras-menu;
-        font-size: 3rem;
+        font-size: 350%;
+        font-family: serif;
+        margin: 3rem;
+        border-radius: 1rem;
+        text-align: center;
     }
 }
 
@@ -30,6 +34,9 @@ body{
     }
     img{
         border-radius: 5rem $grisoscuro-fondowpp;
+    }
+    .carousel-inner{
+        border-radius: 5rem;
     }
 }
 
@@ -50,9 +57,9 @@ body{
         align-items: center;
         margin: auto;
         margin-top: 2rem;
+        border-radius: 3rem;
         &:hover{
             background: $color-fondo-menu;
-            border-radius: 3rem;
             transform: scale(1.2);
             transition-duration: 0.5s;
         }
@@ -69,10 +76,11 @@ body{
         align-items: center;
         justify-content: center;
         b{
-            font-size: 120%;
-            font-family: monospace;
+            background: #fae99767;
+            font-size: 130%;
             color: $color-letras-menu;
-            border-bottom: 0.1rem solid;
+            border: 0.3rem double;
+            border-radius: 1rem;
         }
         img{
             width: 30%;

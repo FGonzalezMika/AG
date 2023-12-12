@@ -2,12 +2,15 @@ footer{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: $color-fondo-menu;
+    background-image: url('../imagenes/fondomadera.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     padding: 2rem;
     img{
         width: 8rem;
     }
     small{
-        color: $color-letras-menu;
+        color: white;
     }
 }
