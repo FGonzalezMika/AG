@@ -9,17 +9,20 @@ body {
   background-size: cover;
   padding: 20% 0 15% 0;
   border-bottom: 2.3rem solid #2E2E2E;
-}
-.inicio h1 {
   display: flex;
   justify-content: center;
-  backdrop-filter: blur(1rem);
+  text-align: center;
+}
+.inicio h1 {
+  backdrop-filter: blur(0.5rem);
   color: #000000;
   font-size: 350%;
-  font-family: serif;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 3rem;
   border-radius: 1rem;
-  text-align: center;
+}
+.inicio h1 .ag {
+  font-weight: bold;
 }
 
 .obra-slider {
@@ -43,6 +46,7 @@ body {
 .contacto {
   padding: 4rem;
   background: #2E2E2E;
+  text-align: center;
 }
 .contacto h3 {
   color: #FAE997;
@@ -71,6 +75,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  text-align: center;
 }
 .servicios .items-servicios {
   display: flex;
@@ -133,9 +138,10 @@ QUE AL BAJAR LA BARRA NO ME TAPE EL CONTENIDO DE ESA PAGINA */
   color: #fff;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
   .inicio h1 {
     font-size: 250%;
+    backdrop-filter: none;
   }
   .servicios .items-servicios b {
     font-size: 80%;
@@ -150,6 +156,7 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   padding: 2rem;
+  text-align: center;
 }
 footer img {
   width: 8rem;
