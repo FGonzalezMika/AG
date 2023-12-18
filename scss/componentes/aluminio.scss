@@ -1,0 +1,30 @@
+body{
+    background-image: url('../imagenes/fondoaluminio.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    .seccion-aluminio{
+        h1{
+            background: $grisoscuro-fondowpp;
+            color: #ffff;
+            border-radius: 10rem;
+            padding: 1rem;
+            text-align: center;
+            margin: 2rem;
+            position: fixed;
+        }
+        a{
+            text-decoration: none;
+        }
+        .galeria-aluminio{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            img{
+                width: 26rem;
+                margin: 4rem;
+            }
+        }
+    }
+}

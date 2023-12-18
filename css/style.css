@@ -14,7 +14,7 @@ body {
   text-align: center;
 }
 .inicio h1 {
-  backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(0.2rem);
   color: #000000;
   font-size: 350%;
   font-family: Arial, Helvetica, sans-serif;
@@ -94,6 +94,20 @@ body {
   margin: 1rem;
   border-radius: 1rem;
 }
+.servicios .items-servicios a {
+  text-decoration: none;
+}
+.servicios .elemento::after {
+  content: attr(data-texto); /* Toma el contenido del atributo data-texto */
+  display: none; /* Inicialmente oculto */
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px;
+}
+.servicios .elemento:hover::after {
+  display: block; /* Muestra el texto al pasar el mouse */
+}
 
 .icono-wpp {
   position: fixed;
@@ -141,7 +155,6 @@ QUE AL BAJAR LA BARRA NO ME TAPE EL CONTENIDO DE ESA PAGINA */
 @media (max-width: 600px) {
   .inicio h1 {
     font-size: 250%;
-    backdrop-filter: none;
   }
   .servicios .items-servicios b {
     font-size: 80%;
@@ -163,6 +176,35 @@ footer img {
 }
 footer small {
   color: white;
+}
+
+body {
+  background-image: url("../imagenes/fondoaluminio.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+body .seccion-aluminio h1 {
+  background: #2E2E2E;
+  color: white;
+  border-radius: 10rem;
+  padding: 1rem;
+  text-align: center;
+  margin: 2rem;
+  position: fixed;
+}
+body .seccion-aluminio a {
+  text-decoration: none;
+}
+body .seccion-aluminio .galeria-aluminio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .seccion-aluminio .galeria-aluminio img {
+  width: 26rem;
+  margin: 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
