@@ -8,12 +8,16 @@
 .nav-link{
     margin-right: 1.2rem;
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 500;
     color: $color-letras-menu;
     transition: 0.7s;
     border-radius: 2rem;
     &:hover{
-        background: #3b00009f;
-        color: #fff;
+        background: $gristrasparenteletrasmenu;
+        font-weight: 400;
+        color: $blanco-letras;
     }
+}
+.boton-menu{
+    width: 40px;
 }

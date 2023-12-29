@@ -1,19 +1,17 @@
-footer {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-image: url("../imagenes/fondomadera.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 2rem;
-  text-align: center;
-}
-footer img {
-  width: 8rem;
-}
-footer small {
-  color: white;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 16 |         color: $color-letras-menu;
+ *    |                ^^^^^^^^^^^^^^^^^^
+ *    '
+ *   scss\componentes\footer.scss 16:16  root stylesheet */
 
-/*# sourceMappingURL=footer.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 16 \2502          color: $color-letras-menu;\d\a    \2502                 ^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\componentes\\footer.scss 16:16  root stylesheet";
+}

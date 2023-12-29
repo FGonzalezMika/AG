@@ -1,5 +1,5 @@
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .inicio {
@@ -8,7 +8,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 20% 0 15% 0;
-  border-bottom: 2.3rem solid #2E2E2E;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -20,6 +19,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 3rem;
   border-radius: 1rem;
+  font-weight: 50;
 }
 .inicio h1 .ag {
   font-weight: bold;
@@ -38,19 +38,63 @@ body {
 }
 .obra-slider img {
   border-radius: 5rem #2E2E2E;
+  width: 40rem;
+  height: 30rem;
 }
 .obra-slider .carousel-inner {
   border-radius: 5rem;
 }
 
+.servicios {
+  background: #2E2E2E;
+  display: grid;
+  grid-template-areas: "element1 element2 element3" "element4 element5 element6";
+  border-bottom: 0.4rem dashed #FAE997;
+}
+.servicios .contenedor-hijo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+.servicios .contenedor-hijo img {
+  display: flex;
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+}
+.servicios .contenedor-hijo img:hover {
+  border: 0.3rem solid #FAE997;
+  transform: scale(1.1);
+}
+.servicios .contenedor-hijo b {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+.servicios .contenedor-hijo b:hover {
+  color: #2E2E2E;
+  background: #FAE997;
+  border-radius: 0.5rem;
+  transition-duration: 0.1s;
+  transform: scale(1.1);
+}
+.servicios .contenedor-hijo a {
+  color: #FAE997;
+  text-decoration: none;
+}
+
 .contacto {
   padding: 4rem;
   background: #2E2E2E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 .contacto h3 {
   color: #FAE997;
-  border-bottom: 0.5rem solid;
+  border-bottom: 0.3rem solid;
+  font-weight: 200;
 }
 .contacto a {
   color: white;
@@ -60,53 +104,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
   margin-top: 2rem;
-  border-radius: 3rem;
+  border-radius: 1rem;
 }
 .contacto a:hover {
   background: #FAE997;
   transform: scale(1.2);
   transition-duration: 0.5s;
-}
-
-.servicios {
-  background-image: url("../imagenes/medanos.png");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  text-align: center;
-}
-.servicios .items-servicios {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.servicios .items-servicios b {
-  background: rgba(250, 233, 151, 0.4039215686);
-  font-size: 130%;
   color: #000000;
-  border: 0.3rem double;
-  border-radius: 1rem;
-}
-.servicios .items-servicios img {
-  width: 30%;
-  margin: 1rem;
-  border-radius: 1rem;
-}
-.servicios .items-servicios a {
-  text-decoration: none;
-}
-.servicios .elemento::after {
-  content: attr(data-texto); /* Toma el contenido del atributo data-texto */
-  display: none; /* Inicialmente oculto */
-  position: absolute;
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 5px;
-}
-.servicios .elemento:hover::after {
-  display: block; /* Muestra el texto al pasar el mouse */
 }
 
 .icono-wpp {
@@ -127,7 +132,7 @@ body {
 }
 
 .item {
-  scroll-margin-top: 3.5rem; /* ESTO LO PONGO PARA CUANDO HAGO CLICK EN LA PAGINA,
+  scroll-margin-top: 4.5rem; /* ESTO LO PONGO PARA CUANDO HAGO CLICK EN LA PAGINA,
 QUE AL BAJAR LA BARRA NO ME TAPE EL CONTENIDO DE ESA PAGINA */
 }
 
@@ -142,22 +147,71 @@ QUE AL BAJAR LA BARRA NO ME TAPE EL CONTENIDO DE ESA PAGINA */
 .nav-link {
   margin-right: 1.2rem;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 500;
   color: #000000;
   transition: 0.7s;
   border-radius: 2rem;
 }
 .nav-link:hover {
-  background: rgba(59, 0, 0, 0.6235294118);
-  color: #fff;
+  background: rgba(46, 46, 46, 0.8235294118);
+  font-weight: 400;
+  color: white;
 }
 
-@media (max-width: 600px) {
+.boton-menu {
+  width: 40px;
+}
+
+@media (max-width: 950px) {
   .inicio h1 {
     font-size: 250%;
   }
-  .servicios .items-servicios b {
-    font-size: 80%;
+  .obra-slider img {
+    width: 20rem;
+    height: 20rem;
+  }
+  .servicios {
+    background: #2E2E2E;
+    display: grid;
+    grid-template-areas: "elemen1" "elemen2" "elemen3" "elemen4" "elemen5" "elemen6";
+  }
+  .servicios .contenedor-hijo {
+    display: flex;
+    flex-direction: row;
+  }
+  .servicios .contenedor-hijo img {
+    margin: 1rem 1rem 1rem 0rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+  }
+  .servicios .contenedor-hijo img:hover {
+    border: 0.2rem solid #FAE997;
+    transform: scale(1.1);
+  }
+  .servicios .contenedor-hijo b {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .servicios .contenedor-hijo b:hover {
+    color: #2E2E2E;
+    background: #FAE997;
+    border-radius: 0.5rem;
+    transition-duration: 0.1s;
+    transform: scale(0.1);
+  }
+  .servicios .contenedor-hijo a {
+    color: #FAE997;
+    text-decoration: none;
+  }
+  /*IMAGENES ALUMINIO*/
+  #imagunancha {
+    width: 17rem;
+    height: 17rem;
+  }
+  #imagun {
+    margin-top: 7rem;
+    width: 15rem;
   }
 }
 footer {
@@ -175,36 +229,45 @@ footer img {
   width: 8rem;
 }
 footer small {
-  color: white;
+  font-size: 1rem;
+  color: #000000;
 }
 
-body {
-  background-image: url("../imagenes/fondoaluminio.png");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-body .seccion-aluminio h1 {
+.seccion-aluminio {
   background: #2E2E2E;
-  color: white;
-  border-radius: 10rem;
-  padding: 1rem;
-  text-align: center;
+}
+.seccion-aluminio .icono-volver {
+  padding: 0.2rem;
+  width: 3rem;
   margin: 2rem;
   position: fixed;
+  z-index: 9999;
+  background: rgba(250, 233, 151, 0.5333333333);
+  border-radius: 0.5rem;
 }
-body .seccion-aluminio a {
+.seccion-aluminio .icono-volver:hover {
+  border: 0.2rem solid white;
+}
+.seccion-aluminio a {
   text-decoration: none;
 }
-body .seccion-aluminio .galeria-aluminio {
+.seccion-aluminio .galeria-aluminio {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-body .seccion-aluminio .galeria-aluminio img {
-  width: 26rem;
-  margin: 4rem;
+.seccion-aluminio .galeria-aluminio .imagenancha {
+  width: 28rem;
+  border-radius: 1rem;
+  box-shadow: 1rem 1rem 1rem black; /*ILUMINACION LED EN FOTOS*/
+  margin: 3rem 1rem 3rem 1rem;
+}
+.seccion-aluminio .galeria-aluminio .imagen {
+  margin: 3rem 1rem 3rem 1rem;
+  box-shadow: 1rem 1rem 1rem black; /*ILUMINACION LED EN FOTOS*/
+  width: 20rem;
+  border-radius: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

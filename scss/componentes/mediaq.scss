@@ -4,13 +4,60 @@
             font-size: 250%;
         }
     }
-
+    .obra-slider{
+        img{
+            width: 20rem;
+            height: 20rem;
+        }
+    }
     .servicios{
-        .items-servicios{
+        background: $grisoscuro-fondowpp;
+        display: grid;
+        grid-template-areas: 
+        "elemen1"
+        "elemen2"
+        "elemen3"
+        "elemen4"
+        "elemen5"
+        "elemen6";
+        .contenedor-hijo{
+            display: flex;
+            flex-direction: row;
+            img{
+                margin: 1rem 1rem 1rem 0rem;
+                
+                width: 6rem;
+                height: 6rem;
+                border-radius: 50%;
+                &:hover{
+                    border: 0.2rem solid $color-fondo-menu;
+                    transform: scale(1.1);
+                }
+            }
             b{
-                font-size: 80%;
+                font-size: 1rem;
+                font-weight: 500;
+                &:hover{
+                    color: $grisoscuro-fondowpp;
+                    background: $color-fondo-menu;
+                    border-radius: 0.5rem;
+                    transition-duration: 0.1s;
+                    transform: scale(0.1);
+                }
+            }
+            a{
+                color: $color-fondo-menu;
+                text-decoration: none;
             }
         }
-
+    }
+    /*IMAGENES ALUMINIO*/
+    #imagunancha{
+        width: 17rem;
+        height: 17rem;
+    }
+    #imagun{
+        margin-top: 7rem;
+        width: 15rem;
     }
 }

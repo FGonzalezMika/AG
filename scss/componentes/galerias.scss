@@ -1,0 +1,36 @@
+.seccion-aluminio{
+    background: $grisoscuro-fondowpp;
+    .icono-volver{
+        padding: 0.2rem;
+        width: 3rem;
+        margin: 2rem;
+        position: fixed;
+        z-index: 9999;
+        background: #fae99788;
+        border-radius: 0.5rem;
+        &:hover{
+            border: 0.2rem solid $blanco-letras;
+        }
+    }
+    a{
+        text-decoration: none;
+    }
+    .galeria-aluminio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .imagenancha{
+            width: 28rem;
+            border-radius: 1rem;
+            box-shadow: 1rem 1rem 1rem black; /*ILUMINACION LED EN FOTOS*/; 
+            margin: 3rem 1rem 3rem 1rem;
+        }
+        .imagen{
+            margin: 3rem 1rem 3rem 1rem;
+            box-shadow: 1rem 1rem 1rem black; /*ILUMINACION LED EN FOTOS*/; 
+            width: 20rem;
+            border-radius: 1rem;
+        }
+    }
+}

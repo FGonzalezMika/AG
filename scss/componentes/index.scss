@@ -1,5 +1,5 @@
 body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .inicio{
@@ -8,7 +8,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20% 0 15% 0;
-    border-bottom: 2.3rem solid $grisoscuro-fondowpp;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -19,6 +18,8 @@ body{
         font-family: Arial, Helvetica, sans-serif;
         margin: 3rem;
         border-radius: 1rem;
+        font-weight: 50;
+
         .ag{
             font-weight: bold;
         }
@@ -37,19 +38,65 @@ body{
     }
     img{
         border-radius: 5rem $grisoscuro-fondowpp;
+        width: 40rem;
+        height: 30rem;
     }
     .carousel-inner{
         border-radius: 5rem;
     }
 }
 
+.servicios{
+    background: $grisoscuro-fondowpp;
+    display: grid;
+    grid-template-areas: 
+    "element1 element2 element3"
+    "element4 element5 element6";
+    border-bottom: 0.4rem dashed $color-fondo-menu;
+    .contenedor-hijo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+        img{
+            display: flex;
+            width: 11rem;
+            height: 11rem;
+            border-radius: 50%;
+            &:hover{
+                border: 0.3rem solid $color-fondo-menu;
+                transform: scale(1.1);
+            }
+        }
+        b{
+            font-weight: 400;
+            font-size: 1.3rem;
+            &:hover{
+                color: $grisoscuro-fondowpp;
+                background: $color-fondo-menu;
+                border-radius: 0.5rem;
+                transition-duration: 0.1s;
+                transform: scale(1.1);
+            }
+        }
+        a{
+            color: $color-fondo-menu;
+            text-decoration: none;
+        }
+    }
+}
+
 .contacto{
     padding: 4rem;
     background: $grisoscuro-fondowpp;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     h3{
         color: $color-fondo-menu;
-        border-bottom: 0.5rem solid;
+        border-bottom: 0.3rem solid;
+        font-weight: 200;
     }
     a{
         color: white;
@@ -59,56 +106,17 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: auto;
         margin-top: 2rem;
-        border-radius: 3rem;
+        border-radius: 1rem;
         &:hover{
             background: $color-fondo-menu;
             transform: scale(1.2);
             transition-duration: 0.5s;
+            color: $color-letras-menu;
         }
     }
 }
 
-.servicios{
-    background-image: url('../imagenes/medanos.png');
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    text-align: center;
-    .items-servicios{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        b{
-            background: #fae99767;
-            font-size: 130%;
-            color: $color-letras-menu;
-            border: 0.3rem double;
-            border-radius: 1rem;
-        }
-        img{
-            width: 30%;
-            margin: 1rem;
-            border-radius: 1rem;
-        }
-        a{
-            text-decoration: none;
-        }
-    }
-    .elemento::after {
-        content: attr(data-texto); /* Toma el contenido del atributo data-texto */
-        display: none; /* Inicialmente oculto */
-        position: absolute;
-        background: rgba(0, 0, 0, 0.8);
-        color: #ffff;
-        padding: 5px;
-    }
-      
-    .elemento:hover::after {
-        display: block; /* Muestra el texto al pasar el mouse */
-    }
-}
 
 .icono-wpp{
     position: fixed;
@@ -127,12 +135,9 @@ body{
     width: 100%;
 }
 .item{
-    scroll-margin-top: 3.5rem; /* ESTO LO PONGO PARA CUANDO HAGO CLICK EN LA PAGINA,
+    scroll-margin-top: 4.5rem; /* ESTO LO PONGO PARA CUANDO HAGO CLICK EN LA PAGINA,
      QUE AL BAJAR LA BARRA NO ME TAPE EL CONTENIDO DE ESA PAGINA */
 }
-
-
-
 
 
 
