@@ -12,15 +12,24 @@ body{
     justify-content: center;
     text-align: center;
     h1{
-        backdrop-filter: blur(0.2rem);
-        color: $color-letras-menu;
-        font-size: 350%;
-        font-family: Arial, Helvetica, sans-serif;
+        font-size: 3rem;
         margin: 3rem;
+        padding: 1rem;
         border-radius: 1rem;
-        font-weight: 50;
+        font-weight: bold; 
+        color: #000;
+        -webkit-text-stroke: 0.1rem white;
+        background-color: rgba(128, 128, 128, 0.267);
+
+
+        b{
+            color: #000;
+            font-weight: bold;
+        }
 
         .ag{
+            color: $blanco-letras;
+            -webkit-text-stroke: 0.2rem black;
             font-weight: bold;
         }
     }
