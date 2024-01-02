@@ -1,6 +1,5 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    font-family: 'Barlow', sans-serif;;
 }
 
 .inicio{
@@ -17,21 +16,22 @@ body{
         margin: 3rem;
         padding: 1rem;
         border-radius: 1rem;
-        font-weight: bold; 
         color: #000;
-        -webkit-text-stroke: 0.1rem white;
+        /*-webkit-text-stroke: 0.1rem white;*/
+        text-shadow: 5px 5px 5px $color-fondo-menu;
         background-color: rgba(128, 128, 128, 0.267);
+        font-weight: bold; 
 
 
         b{
             color: #000;
-            font-weight: bold;
+            font-weight: bold; 
         }
 
         .ag{
             color: $blanco-letras;
-            -webkit-text-stroke: 0.2rem black;
-            font-weight: bold;
+            -webkit-text-stroke: 0.05em black;
+            font-weight: bold; 
         }
     }
 }

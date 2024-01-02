@@ -1,6 +1,5 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+  font-family: "Barlow", sans-serif;
 }
 
 .inicio {
@@ -18,10 +17,11 @@ body {
   margin: 3rem;
   padding: 1rem;
   border-radius: 1rem;
-  font-weight: bold;
   color: #000;
-  -webkit-text-stroke: 0.1rem white;
+  /*-webkit-text-stroke: 0.1rem white;*/
+  text-shadow: 5px 5px 5px #FAE997;
   background-color: rgba(128, 128, 128, 0.267);
+  font-weight: bold;
 }
 .inicio h1 b {
   color: #000;
@@ -29,7 +29,7 @@ body {
 }
 .inicio h1 .ag {
   color: white;
-  -webkit-text-stroke: 0.2rem black;
+  -webkit-text-stroke: 0.05em black;
   font-weight: bold;
 }
 
