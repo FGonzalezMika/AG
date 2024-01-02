@@ -1,5 +1,6 @@
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Barlow", sans-serif;
+  /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
 }
 
 .inicio {
@@ -153,8 +154,8 @@ QUE AL BAJAR LA BARRA NO ME TAPE EL CONTENIDO DE ESA PAGINA */
 
 .nav-link {
   margin-right: 1.2rem;
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 1.7rem;
+  font-weight: 540;
   color: #000000;
   transition: 0.7s;
   border-radius: 2rem;
