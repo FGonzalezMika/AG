@@ -140,7 +140,7 @@ body {
 }
 
 .item {
-  scroll-margin-top: 4.5rem; /* ESTO LO PONGO PARA CUANDO HAGO CLICK EN LA PAGINA,
+  scroll-margin-top: 4.2rem; /* ESTO LO PONGO PARA CUANDO HAGO CLICK EN LA PAGINA,
 QUE AL BAJAR LA BARRA NO ME TAPE EL CONTENIDO DE ESA PAGINA */
 }
 
@@ -161,7 +161,6 @@ QUE AL BAJAR LA BARRA NO ME TAPE EL CONTENIDO DE ESA PAGINA */
   border-radius: 2rem;
 }
 .nav-link:hover {
-  background: rgba(46, 46, 46, 0.8235294118);
   font-weight: 400;
   color: white;
 }
