@@ -170,8 +170,8 @@ QUE AL BAJAR LA BARRA NO ME TAPE EL CONTENIDO DE ESA PAGINA */
 }
 
 @media (max-width: 950px) {
-  .inicio h1 {
-    font-size: 250%;
+  .inicio .titulo {
+    font-size: 2.5rem;
   }
   .obra-slider img {
     width: 20rem;
